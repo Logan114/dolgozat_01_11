@@ -28,6 +28,4 @@ def NewYork(lista):
         if lista[i].varos == "New York":
             print(f"{lista[i].csapat}, {lista[i].nev}")
             
-feldolgozas(sorok)
-NewYork(stadionok_lista)
 

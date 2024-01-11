@@ -34,7 +34,7 @@ def masodik_feladat(lista):
 
 def masodik_feladat_b(lista, lista2):
     for i in range (0,(len(lista)),1):
-        if len(lista[i]) == 2:
+        if len(str(lista[i])) == 2:
             lista2.append(lista[i])
     return lista2
 
@@ -56,7 +56,9 @@ def masodik_feladat_d(lista,paratlan):
     paratlan.append(paratlan_ossz)
     return paratlan_osszege
 
-def masodik_feladat_e(paratlan,paros):
+def masodik_feladat_e(paratlan_list,paros_list):
+    paratlan = paratlan_list
+    paros = paros_list
     if paratlan > paros:
         print (f"A páratlanok összege {paratlan} > {paros}")
     else:
